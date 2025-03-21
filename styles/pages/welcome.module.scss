@@ -1,0 +1,57 @@
+@import '@/styles/theme';
+
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2xl;
+  background-color: $color-white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-form;
+  z-index: 1;
+  margin: 0 $spacing-4xl;
+  max-height: 80%;
+  position: relative;
+  padding: $spacing-5xl $spacing-2xl;
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: $spacing-5xl;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    padding: $spacing-xl;
+    margin: $spacing-lg;
+
+    button {
+      margin-top: $spacing-xl;
+    }
+  }
+}
+
+.title {
+  font-size: $font-2xl;
+  font-weight: 500;
+  align-self: center;
+  justify-self: center;
+  color: $color-textStrong;
+}
+
+.description {
+  font-weight: 400;
+  text-align: center;
+  color: $color-textLight;
+  max-width: 600px;
+  line-height: 1.4rem;
+}

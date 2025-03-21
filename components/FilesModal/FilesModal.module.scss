@@ -1,0 +1,61 @@
+@import '@/styles/theme';
+
+.hide_buttons {
+  display: hidden;
+  opacity: 0;
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-self: flex-end;
+  justify-content: space-between;
+  max-width: 250px;
+  align-self: flex-end;
+  width: 100%;
+  margin-top: $spacing-3xl;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+.image_container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  max-height: 80vh;
+  overflow-y: hidden;
+}
+
+.image {
+  object-fit: contain;
+
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.document {
+  border: none; /* Remove default border */
+  height: 80vh; /* Set height to 100% of the viewport height */
+  width: 100%; /* Set width to 100% of the viewport width */
+  width: fit-content;
+  min-height: 80vh;
+  min-width: 90vw;
+}
+
+.modal_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.loader_wrapper {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

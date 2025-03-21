@@ -1,0 +1,91 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: $spacing-xl;
+  max-width: 1440px;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-wrap: wrap-reverse;
+    gap: $spacing-2xl;
+  }
+}
+
+.left_column {
+  width: 70%;
+  margin-right: $spacing-xl;
+  min-width: 610px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.right_column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 350px;
+  margin-left: $spacing-xl;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: $spacing-4xl;
+
+  button {
+    min-width: 150px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: $spacing-4xl;
+  transform: scale(2);
+}
+
+.history_wrapper {
+  margin-right: -$spacing-mdl;
+  padding-right: $spacing-sm;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 180px);
+  margin-top: $spacing-2xl;
+
+  &::-webkit-scrollbar-track {
+    margin-top: $spacing-4xl;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    overflow-y: visible;
+    max-height: fit-content;
+  }
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: $spacing-6xl;
+  transform: scale(2);
+}

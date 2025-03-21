@@ -1,0 +1,80 @@
+@import '@/styles/theme';
+
+.calendar {
+  width: 199px;
+  height: 185px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: $spacing-sm;
+
+  button {
+    width: 25px;
+    height: 25px;
+    color: $color-textLight;
+    padding: 0;
+  }
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-xs;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border: 0;
+  border-radius: $radius-round;
+
+  &:hover {
+    background-color: $color-gray300;
+  }
+}
+
+.inactive {
+  color: $color-transparent;
+  pointer-events: none;
+}
+
+.prev_next_month {
+  position: relative;
+  color: $color-error600;
+  cursor: default;
+  transition: all 0.1s ease-in-out;
+  border: 0;
+
+  &:hover {
+    background-color: $color-transparent;
+  }
+}
+
+.day_label {
+  font-weight: bold;
+  cursor: default;
+  color: $color-gray900;
+}
+
+.day_label:hover {
+  background-color: $color-transparent;
+}
+
+.weekend {
+  color: $color-gray500 !important;
+}
+
+.current_date {
+  color: $color-primary600 !important;
+}
+
+.active {
+  background-color: $color-primary300;
+  color: $color-white !important;
+}
+
+.active:hover {
+  background-color: $color-primary300;
+}

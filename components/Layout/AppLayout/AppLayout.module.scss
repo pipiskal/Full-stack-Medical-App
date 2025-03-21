@@ -1,0 +1,50 @@
+@import '@/styles/theme';
+
+.layout {
+  width: 100%;
+  display: flex;
+  transition: padding 0.2s ease-in-out;
+}
+
+.layout_page {
+  padding: 84px 24px 24px 24px;
+  transition: padding 0.2s ease-in-out;
+  padding-left: 286px;
+
+  @media screen and (max-width: $breakpoint-laptop) {
+    transition: padding 0.2s ease-in-out;
+    padding-left: 0;
+  }
+}
+
+.layout_page_full {
+  transition: padding 0.2s ease-in-out;
+  padding-left: $spacing-2xl;
+
+  main {
+    transition: padding 0.2s ease-in-out;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $breakpoint-laptop) {
+    transition: padding 0.2s ease-in-out;
+    padding-left: $spacing-2xl;
+  }
+}
+
+.layout_body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fafafb;
+  transition: padding 0.2s ease-in-out;
+  padding-left: 0;
+
+  @media screen and (max-width: $breakpoint-laptop) {
+    transition: padding 0.2s ease-in-out;
+    padding-left: 0;
+  }
+}

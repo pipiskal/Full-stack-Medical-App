@@ -1,0 +1,46 @@
+@import '@/styles/theme';
+
+.buttons_wrapper {
+  display: flex;
+}
+
+.select_event_button {
+  svg {
+    width: 20px;
+    height: 20px;
+    color: $color-gray700;
+  }
+}
+
+.button_hover {
+  border-radius: $radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+
+  width: 20px;
+  height: 20px;
+
+  padding: $spacing-lg;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    opacity: 1;
+    background-color: $color-gray300;
+  }
+}
+
+.delete_button {
+  color: $color-error600;
+}
+
+.edit_button {
+  color: $color-gray700;
+}

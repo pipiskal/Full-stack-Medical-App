@@ -1,0 +1,95 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 510px;
+}
+
+.disabled_form {
+  pointer-events: none;
+  cursor: default;
+
+  input,
+  button,
+  label,
+  div,
+  polygon,
+  path {
+    cursor: default;
+  }
+
+  input {
+    color: $color-gray600;
+  }
+
+  textarea {
+    color: $color-gray600;
+  }
+}
+
+.checkboxes_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 $spacing-xl;
+  margin-bottom: $spacing-3xl;
+}
+
+.checkbox_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing-lg;
+
+  label {
+    margin-left: $spacing-md;
+    cursor: pointer;
+  }
+}
+
+.teeth_selector_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-3xl;
+  width: 100%;
+}
+
+.table_wrapper {
+  width: 100%;
+  margin-top: $spacing-2xl;
+}
+
+.tooth_input_data {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+  width: 100%;
+}
+
+.fake_label {
+  font-size: $font-sm;
+  font-weight: 400;
+  color: $color-textLight;
+  margin-bottom: $spacing-md;
+}
+
+.fake_description_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fake_description {
+  width: 100%;
+  min-height: 100px;
+  padding: $spacing-md $spacing-md;
+  font-size: $font-sm;
+  border-radius: $radius-xs;
+  border: 1px solid $color-gray400;
+  height: fit-content;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: pre-wrap;
+}

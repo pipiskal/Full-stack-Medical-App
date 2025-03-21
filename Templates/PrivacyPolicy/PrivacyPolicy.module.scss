@@ -1,0 +1,86 @@
+@import '@/styles/theme';
+
+.content {
+  margin-top: $spacing-mdl;
+  font-size: $font-xs;
+  color: $color-textLight;
+  line-height: 1.5;
+
+  a {
+    color: $color-primary;
+  }
+
+  a:hover {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+
+  ul {
+    margin-left: $spacing-lg;
+  }
+
+  li {
+    margin-bottom: $spacing-md;
+  }
+
+  ol {
+    margin-left: $spacing-lg;
+  }
+
+  h1 {
+    font-size: $font-2xl;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+  }
+
+  h2 {
+    font-size: $font-xl;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+  }
+
+  h3 {
+    font-size: $font-lg;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+    margin-top: $spacing-2xl;
+  }
+
+  h4 {
+    font-size: $font-md;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+  }
+
+  h5 {
+    font-size: $font-sm;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+  }
+
+  h6 {
+    font-size: $font-xs;
+    font-weight: 500;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: $spacing-md;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote {
+    margin-left: $spacing-lg;
+    margin-right: $spacing-lg;
+    margin-bottom: $spacing-md;
+    padding-left: $spacing-md;
+    border-left: 4px solid $color-primary;
+  }
+}

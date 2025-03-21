@@ -1,0 +1,56 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: $spacing-lg;
+  padding-top: $spacing-lg;
+
+  border-top: 1px solid $color-gray300;
+}
+
+.upload_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius-xs;
+  border: 1px solid $color-gray400;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+  margin-right: $spacing-lg;
+  margin-top: $spacing-lg;
+  min-width: fit-content;
+
+  svg {
+    fill: $color-gray500;
+    font-size: $font-md;
+    margin-right: $spacing-lg;
+  }
+
+  .upload_text {
+    color: $color-gray500;
+    font-size: $font-xs;
+    text-align: center;
+    margin-top: 2px;
+  }
+}
+
+.upload_button:hover {
+  color: $color-primary700;
+  border-color: $color-primary600;
+
+  svg {
+    fill: $color-primary600;
+  }
+
+  .upload_text {
+    color: $color-primary600;
+  }
+}
+
+.files_wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: $spacing-lg;
+}

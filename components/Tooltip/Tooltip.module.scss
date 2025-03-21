@@ -1,0 +1,59 @@
+@import '@/styles/theme';
+
+.tooltip_wrapper {
+  position: relative;
+  display: inherit;
+  cursor: pointer;
+
+  .tooltip {
+    position: absolute;
+    z-index: 7;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    background-color: $color-white;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(50%);
+      rotate: 180deg;
+      border-width: 0.5rem;
+      border-style: solid;
+      border-color: transparent transparent $color-white transparent;
+    }
+  }
+
+  .event_details {
+    top: -130%;
+    left: 50%;
+  }
+
+  .date_navigator {
+    top: -190%;
+    left: 50%;
+  }
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.message {
+  text-align: center;
+  margin: $spacing-md;
+  color: $color-textLighter;
+  font-size: $font-xs;
+  width: auto;
+  white-space: nowrap;
+}

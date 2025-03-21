@@ -1,0 +1,16 @@
+@import '@/styles/theme';
+
+.form_element {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-mdl;
+}
+
+.default_title {
+  font-size: $font-sm;
+  font-weight: 400;
+}
+
+.required_field {
+  color: $color-error600;
+}

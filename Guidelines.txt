@@ -1,0 +1,14 @@
+CSS:
+1. Classes will be written with lowercase and underscore ex. layout_body
+
+Types:
+1. All types will start with uppercase and pascal case and end with Type ex.  ButtonType
+2. If type is props of a component, it will be written with PropsType in the end and will be placed above the component declaration ex. ButtonTypeProps
+3. All types will be placed in a separate file in the types.ts file to avoid circle dependencies
+4. Instead of type any we use unknown
+
+Constants:
+1. All constants will be written with uppercase and underscore ex. LAYOUT_BODY
+
+Icons:
+1. All icons will be imported from the Ant Design library

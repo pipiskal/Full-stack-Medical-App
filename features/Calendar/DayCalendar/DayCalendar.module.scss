@@ -1,0 +1,54 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-5xl;
+  width: 100%;
+  max-width: 1440px;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+
+.left_section {
+  width: 70%;
+  min-width: 610px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}
+
+.calendar_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.right_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacing-md;
+  height: fit-content;
+  width: 30%;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: row;
+    gap: $spacing-4xl;
+    width: 100%;
+  }
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: $spacing-6xl;
+  transform: scale(2);
+}

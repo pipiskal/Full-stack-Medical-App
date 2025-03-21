@@ -1,0 +1,39 @@
+@import '@/styles/theme';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 600px;
+  gap: $spacing-xl;
+  padding-top: $spacing-md;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    width: 30%;
+  }
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  align-self: flex-end;
+  width: 100%;
+  margin-top: $spacing-lg;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+.event_hours {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-md;
+  width: 100%;
+  margin-top: $spacing-md;
+}

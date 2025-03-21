@@ -1,0 +1,38 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  background-color: $color-gray300;
+  border-radius: $radius-xs;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+.wrapper:hover {
+  background-color: $color-gray400;
+
+  .title {
+    color: $color-gray600;
+  }
+}
+
+.title {
+  color: $color-gray500;
+  text-align: center;
+}
+
+.name {
+  padding: $spacing-sm;
+  color: $color-gray600;
+  font-size: $font-xs;
+  text-align: center;
+  margin-top: $spacing-xs;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

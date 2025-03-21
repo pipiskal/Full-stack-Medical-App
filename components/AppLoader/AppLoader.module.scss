@@ -1,0 +1,56 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-white;
+  margin-top: 20vh;
+}
+
+.title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  color: $color-textMedium;
+  margin-bottom: $spacing-5xl;
+  letter-spacing: 1.6rem;
+  animation: title 1.5s;
+
+  span {
+    color: $color-primary800;
+  }
+}
+
+.loading_text {
+  font-size: $font-xl;
+  font-weight: 400;
+  color: $color-textLight;
+  margin-bottom: $spacing-md;
+  letter-spacing: 8px;
+  animation: loading 3s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

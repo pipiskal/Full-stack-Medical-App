@@ -1,0 +1,42 @@
+@import '@/styles/theme';
+
+.primary {
+  min-height: 42px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-md;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary:hover {
+  background-color: $color-primary400;
+}
+
+.primary:disabled {
+  background-color: $color-primary200;
+  cursor: not-allowed;
+}
+
+.secondary {
+  min-height: 42px;
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-md;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.secondary:hover {
+  background-color: $color-primary100;
+}
+
+.secondary:disabled {
+  background-color: $color-white;
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,70 @@
+@import '@/styles/theme';
+
+.layout_header {
+  position: fixed;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 0 $spacing-md;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing-3xl 0 $spacing-lg;
+  z-index: 5;
+  // transition: all 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
+}
+
+.layout_header_side_menu_open {
+  transition: padding 0.2s ease-in-out;
+  padding-left: 268px;
+}
+
+.search_bar {
+  width: 400px;
+  height: 40px;
+}
+
+.button {
+  width: 36px;
+  height: 36px;
+  background-color: $color-gray300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: $spacing-xl;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.settings_button {
+  height: 36px;
+  background-color: $color-transparent;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: padding 0.2s ease-in-out;
+  padding: 0 $spacing-sm;
+
+  p {
+    font-size: $font-sm;
+    color: $color-textLight;
+    margin-left: $spacing-mdl;
+    text-transform: capitalize;
+  }
+}
+
+.settings_button:hover {
+  background-color: $color-gray300;
+}

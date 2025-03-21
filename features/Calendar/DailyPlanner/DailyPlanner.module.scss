@@ -1,0 +1,138 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacing-lg;
+  width: 100%;
+  min-width: 600px;
+  max-width: 900px;
+}
+
+.date_details {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.full_date {
+  font-size: $font-2xl;
+  font-weight: 700;
+  color: $color-textStrong;
+}
+
+.year {
+  font-weight: 400;
+}
+
+.month {
+  font-weight: 700;
+}
+
+.day_name {
+  font-size: $font-lg;
+  font-weight: 600;
+  color: $color-textStrong;
+}
+
+.events_wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid $color-gray500;
+  border-bottom: 2px solid $color-gray500;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding: $spacing-md 0;
+  position: relative;
+}
+
+.time_point_wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+}
+
+.time_display {
+  font-size: $font-xs;
+  color: $color-textLight;
+  width: 40px;
+  text-align: end;
+  display: flex;
+  margin-right: $spacing-md;
+}
+
+.time_subdivisions {
+  border-top: 1px solid $color-gray400;
+  width: 100%;
+  margin-top: 7px;
+  height: 64px;
+}
+
+.subdivision {
+  width: 100%;
+  height: calc(64px / 12);
+}
+
+.event {
+  display: flex;
+  gap: $spacing-xs;
+  padding: $spacing-md;
+  border-radius: $radius-xs;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: calc(100% - 42px);
+  margin-left: 42px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  height: unset;
+}
+
+.event:hover {
+  opacity: 1;
+  z-index: 1;
+}
+
+.active_event {
+  opacity: 1;
+  z-index: 1;
+}
+
+.timestamp {
+  font-size: $font-xs;
+  color: $color-white;
+  margin-right: $spacing-md;
+  margin-top: $spacing-xs;
+}
+
+.event_title {
+  font-size: $font-sm;
+  font-weight: 700;
+  color: $color-white;
+}
+
+.event_description {
+  font-size: $font-sm;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.blue {
+  background-color: $color-primary700;
+}
+
+.red {
+  background-color: $color-error400;
+}
+
+.green {
+  background-color: $color-success600;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,109 @@
+// Color palette
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray100: #fafafa;
+$color-gray200: #f5f5f5;
+$color-gray300: #f0f0f0;
+$color-gray400: #d9d9d9;
+$color-gray500: #bfbfbf;
+$color-gray600: #8c8c8c;
+$color-gray700: #595959;
+$color-gray800: #262626;
+$color-gray900: #141414;
+$color-altGray200: #434343;
+$color-altGray300: #1f1f1f;
+
+// primary color
+$color-primary: #1890ff;
+$color-primary100: #e6f7ff;
+$color-primary200: #bae7ff;
+$color-primary300: #91d5ff;
+$color-primary400: #69c0ff;
+$color-primary500: #40a9ff;
+$color-primary600: #1890ff;
+$color-primary700: #096dd9;
+$color-primary800: #0050b3;
+$color-primary900: #003a8c;
+$color-primary1000: #002766;
+
+// Success color
+$color-success100: #f6ffed;
+$color-success400: #95de64;
+$color-success600: #52c41a;
+$color-success800: #237804;
+$color-success1000: #092b00;
+
+// Warning color
+$color-warning100: #fffbe6;
+$color-warning400: #ffd666;
+$color-warning600: #faad14;
+$color-warning800: #ad6800;
+$color-warning1000: #613400;
+
+// Error color
+$color-error100: #fff1f0;
+$color-error400: #ff7875;
+$color-error600: #f5222d;
+$color-error800: #a8071a;
+$color-error1000: #5c0011;
+
+//General
+$color-transparent: transparent;
+
+// TEXT-COLORS
+$color-textStrong: $color-gray900;
+$color-textMedium: $color-gray800;
+$color-textLight: $color-gray700;
+$color-textLighter: $color-gray600;
+
+// Font size
+$font-xxs: 10px;
+$font-xs: 12px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 20px;
+$font-xl: 24px;
+$font-2xl: 32px;
+$font-3xl: 48px;
+$font-4xl: 64px;
+
+// Spacing
+$spacing-xs: 2px;
+$spacing-sm: 4px;
+$spacing-md: 8px;
+$spacing-mdl: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+$spacing-3xl: 28px;
+$spacing-4xl: 32px;
+$spacing-5xl: 64px;
+$spacing-6xl: 128px;
+
+// this is the padding of all the page use this one instead of other spacings
+$spacing-pageInsetDesktop: 64px;
+$spacing-pageInsetLaptop: 32px;
+$spacing-pageInsetTablet: 16px;
+$spacing-pageInsetPhone: 8px;
+
+// Border radius
+$radius-xs: 4px;
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-round: 50%;
+
+// Buttons border radius
+$btnBorderRadius: $radius-xs;
+
+// Media queries breakpoints
+$breakpoint-desktop: 1920px;
+$breakpoint-laptop-large: 1440px;
+$breakpoint-laptop-medium: 1280px;
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 580px;
+
+//Shadows
+$shadow-form: rgba(0, 0, 0, 0.15) 0px 2px 8px;

@@ -1,0 +1,61 @@
+@import '@/styles/theme';
+
+.item_menu {
+  width: 100%;
+  height: 46px;
+  padding: $spacing-md $spacing-lg $spacing-md $spacing-3xl;
+  display: flex;
+  align-items: center;
+  font-size: $font-sm;
+  color: $color-textMedium;
+  min-width: 259px;
+  border-radius: 0;
+}
+
+.item_menu:disabled {
+  color: $color-gray500;
+  display: flex;
+  cursor: default;
+
+  .item_menu_icon {
+    svg {
+      color: $color-gray500;
+    }
+  }
+}
+
+.item_menu:disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.active_item_menu {
+  color: $color-primary600;
+  background-color: $color-primary100;
+  display: flex;
+
+  .item_menu_icon {
+    svg {
+      color: $color-primary600;
+    }
+  }
+}
+
+.active_item_menu:hover {
+  cursor: default !important;
+}
+
+.item_menu:hover {
+  background-color: $color-primary100;
+  cursor: pointer;
+}
+
+.item_menu_icon {
+  margin-right: $spacing-mdl;
+  margin-bottom: -$spacing-xs;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

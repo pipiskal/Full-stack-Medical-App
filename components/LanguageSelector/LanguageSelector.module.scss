@@ -1,0 +1,98 @@
+@import '@/styles/theme';
+
+.selector_wrapper {
+  cursor: pointer;
+}
+
+.main_display {
+  width: 100px;
+  background-color: $color-transparent;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing-mdl;
+  position: relative;
+  border-radius: $radius-xs;
+}
+
+.arrow_down {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid $color-gray500;
+  border-bottom: 2px solid $color-gray500;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  margin-top: -1px;
+}
+
+.arrow_up {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid $color-gray500;
+  border-bottom: 2px solid $color-gray500;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  margin-top: 3px;
+}
+
+.main_title {
+  display: flex;
+  align-items: center;
+  font-size: $font-sm;
+
+  span {
+    font-size: $font-sm;
+    color: $color-gray600;
+    margin-left: $spacing-lg;
+  }
+}
+
+.dropdown_wrapper {
+  position: absolute;
+  top: 60px;
+  width: 100px;
+  background-color: white;
+  z-index: 1;
+
+  border-radius: $radius-xs;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+
+  button {
+    border-radius: 0;
+  }
+
+  :first-child {
+    border-top-left-radius: $radius-xs;
+    border-top-right-radius: $radius-xs;
+  }
+
+  :last-child {
+    border-bottom-left-radius: $radius-xs;
+    border-bottom-right-radius: $radius-xs;
+  }
+}
+
+.dropdown_item {
+  padding: $spacing-mdl;
+  font-size: $font-sm;
+  height: 41px;
+  width: 100%;
+  background-color: $color-white;
+}
+
+.dropdown_item:hover {
+  background-color: $color-primary300;
+  color: $color-white;
+}
+
+.divider_line {
+  width: 84px;
+  height: 1px;
+  background-color: $color-gray300;
+  margin: 0 $spacing-md;
+}

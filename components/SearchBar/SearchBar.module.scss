@@ -1,0 +1,70 @@
+@import '@/styles/theme';
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+}
+
+.searchBar {
+  height: 40px;
+  padding-left: $spacing-4xl;
+}
+
+.search_icon {
+  color: $color-gray600;
+  position: absolute;
+  left: $spacing-md;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+  border: 1px solid $color-gray300;
+  border-radius: $radius-xs;
+  box-shadow: $shadow-form;
+  z-index: 1;
+  cursor: pointer;
+  max-height: 400px;
+  overflow-y: auto;
+
+  // Hide scrollbar for IE, Edge and Firefox
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  // Hide scrollbar for Chrome, Safari and Opera
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dropdown_menu_item {
+  padding: $spacing-md $spacing-lg;
+  font-size: $font-sm;
+  color: $color-textMedium;
+  width: 100%;
+  text-align: left;
+
+  :first-child {
+    border-top-left-radius: $radius-xs;
+    border-top-right-radius: $radius-xs;
+  }
+
+  :last-child {
+    border-bottom-left-radius: $radius-xs;
+    border-bottom-right-radius: $radius-xs;
+  }
+
+  &:hover {
+    background-color: $color-primary100;
+  }
+}

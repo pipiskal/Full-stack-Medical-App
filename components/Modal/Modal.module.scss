@@ -1,0 +1,54 @@
+@import '@/styles/theme';
+
+.layout {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: $color-white;
+  border-radius: $radius-xs;
+  width: fit-content;
+  padding: $spacing-xl;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-xl;
+  min-width: 400px;
+}
+
+.empty_space {
+  width: 40px;
+  height: 10px;
+}
+
+.close_button {
+  cursor: pointer;
+  color: $color-gray500;
+  transition: color 0.2s ease-in-out;
+  padding: 0;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    margin-top: -2px;
+  }
+
+  &:hover {
+    color: $color-gray700;
+  }
+}

@@ -1,0 +1,160 @@
+@import '@/styles/theme';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border-radius: $radius-sm;
+}
+
+.table_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius-sm;
+}
+
+.header_details {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $color-gray300;
+  border-bottom: 2px solid $color-gray300;
+  border-radius: $radius-sm $radius-sm 0 0;
+  padding: $spacing-xl 100px $spacing-xl $spacing-5xl;
+  color: $color-primary700;
+  font-size: $font-sm;
+  font-weight: 600;
+  z-index: 1;
+  background-color: $color-white;
+}
+
+.header_details_item {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table_content {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: $color-gray300;
+  border-radius: 0px 0px $radius-sm $radius-sm;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-md;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-sm;
+  border-bottom: 1px solid $color-gray300;
+}
+
+.last_row {
+  border-bottom: none;
+  border-radius: 0 0 $radius-sm $radius-sm;
+}
+
+.row_with_hover {
+  @extend .row;
+
+  &:hover {
+    background-color: $color-primary100;
+  }
+}
+
+.content_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: $spacing-2xl;
+  padding-right: $spacing-md;
+}
+
+.info_row {
+  width: 100%;
+  color: $color-textStrong;
+  font-size: $font-sm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: $spacing-md;
+}
+
+.row_item {
+  width: 100%;
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrow {
+  transition: all 0.05s ease-in-out;
+}
+
+.arrow_down {
+  transition: all 0.05s ease-in-out;
+  transform: rotate(90deg) translateX(0px) translateY(2px);
+}
+
+.element_content_hidden {
+  display: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.element_content_visible {
+  display: flex;
+  transition: all 0.25s ease-in-out;
+  border-bottom: 1px solid $color-gray300;
+  background-color: $color-gray100;
+}
+
+.last_element_content_visible {
+  border-top: 1px solid $color-gray300;
+  border-radius: 0 0 $radius-sm $radius-sm;
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.actions_wrapper {
+  padding-right: $spacing-lg;
+}
+
+.actions {
+  width: 64px;
+  height: 33px;
+}
+
+.patient_form_wrapper {
+  width: 100%;
+}
+
+.modal_description {
+  display: flex;
+  gap: $spacing-md;
+  font-weight: 600;
+}
+
+.no_patient_found_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 $spacing-xl $spacing-5xl $spacing-xl;
+  border: 1px solid $color-gray300;
+  border-radius: 0 0 $radius-sm $radius-sm;
+}
+
+.no_patient_found {
+  max-width: 60%;
+}

@@ -1,0 +1,46 @@
+@import '@/styles/theme';
+
+@import '@/styles/theme';
+
+.form {
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+  background-color: $color-white;
+  width: 100%;
+  border-radius: $radius-sm;
+  z-index: 1;
+  padding: $spacing-xl $spacing-2xl $spacing-2xl $spacing-2xl;
+
+  @media (max-width: $breakpoint-phone) {
+    padding: $spacing-xl;
+    gap: $spacing-xl;
+  }
+}
+
+.name_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing-xl;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+
+  input {
+    width: 100%;
+    min-width: 190px;
+  }
+}
+
+.button_wrapper {
+  display: flex;
+  margin-top: $spacing-2xl;
+  width: 100%;
+
+  button {
+    width: 100%;
+  }
+}

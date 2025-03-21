@@ -1,0 +1,76 @@
+@import '@/styles/theme';
+
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2xl;
+  background-color: $color-white;
+  width: 100%;
+  max-width: 475px;
+  padding: $spacing-4xl;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-form;
+  z-index: 1;
+  margin: $spacing-lg;
+
+  @media (max-width: $breakpoint-phone) {
+    padding: $spacing-xl;
+    gap: $spacing-xl;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: $spacing-mdl;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $spacing-md 0;
+}
+
+.remember_me {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-lg;
+}
+
+.remember_me label {
+  color: $color-gray800;
+}
+
+.remember_me label:hover {
+  cursor: pointer;
+}
+
+.remember_me:hover {
+  cursor: pointer;
+}
+
+.no_account {
+  font-size: $font-sm;
+  color: $color-primary;
+}
+
+.forgot_password {
+  font-size: $font-sm;
+  color: $color-gray800;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.forgot_password:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,49 @@
+@import '@/styles/theme';
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  max-width: 1440px;
+  min-width: 730px;
+  width: 100%;
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: $spacing-md;
+
+  border-radius: $radius-sm;
+}
+
+.search_wrapper {
+  max-width: calc(1440px - #{$spacing-lg});
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-5xl;
+}
+
+.search_icon {
+  position: absolute;
+  left: $spacing-md;
+  color: $color-gray600;
+}
+
+.searchBar {
+  height: 40px;
+  padding-left: $spacing-4xl;
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: $spacing-6xl;
+  transform: scale(2);
+}

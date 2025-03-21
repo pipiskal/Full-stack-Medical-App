@@ -1,0 +1,29 @@
+@import '@/styles/theme';
+
+.button_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $spacing-lg;
+}
+
+.date_selection_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  margin-right: $spacing-2xl;
+
+  input {
+    margin-top: $spacing-md;
+    max-width: 350px;
+    background-color: $color-white;
+  }
+}
+
+.buttons_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: $spacing-md;
+  margin-top: $spacing-2xl;
+}

@@ -1,0 +1,57 @@
+@import '@/styles/theme';
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(249, 249, 250);
+}
+
+.logo_image {
+  position: absolute;
+  left: -200px;
+  filter: blur(5px);
+  z-index: 0;
+  height: 100vh;
+}
+
+.children_wrapper {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  padding: 0 $spacing-pageInsetDesktop;
+  z-index: 10;
+
+  img {
+    cursor: pointer;
+  }
+
+  @media (max-width: $breakpoint-laptop-large) {
+    padding: 0 $spacing-pageInsetLaptop;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0 $spacing-pageInsetTablet;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    padding: 0 $spacing-pageInsetPhone;
+  }
+}

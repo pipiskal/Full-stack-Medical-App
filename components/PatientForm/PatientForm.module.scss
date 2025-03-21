@@ -1,0 +1,164 @@
+@import '@/styles/theme';
+
+.patient_form {
+  max-width: 1440px;
+  min-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius-sm;
+  align-items: space-around;
+  gap: $spacing-2xl;
+  padding: $spacing-4xl $spacing-5xl;
+  background-color: $color-white;
+  border: 1px solid $color-gray300;
+
+  & label {
+    font-weight: 600;
+  }
+}
+
+.grid_design {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: $spacing-2xl;
+
+  @media (max-width: $breakpoint-laptop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-2xl;
+  }
+}
+
+.update_patient_form {
+  @extend .patient_form;
+  padding: $spacing-4xl $spacing-5xl;
+  box-shadow: none;
+  pointer-events: none;
+  background-color: $color-gray100;
+  border: none;
+  border-radius: 0px;
+  gap: $spacing-xl;
+
+  & input {
+    color: $color-textLighter;
+    border-color: $color-gray300;
+  }
+
+  & label {
+    font-weight: 400;
+  }
+
+  & textarea {
+    color: $color-textLighter;
+    border-color: $color-gray300;
+  }
+}
+
+.edit_patient_form {
+  @extend .update_patient_form;
+  border-radius: 0;
+  pointer-events: all;
+
+  & input {
+    color: $color-textMedium;
+    border-color: $color-gray400;
+  }
+
+  & label {
+    font-weight: 600;
+  }
+
+  & textarea {
+    color: $color-textMedium;
+    border-color: $color-gray400;
+  }
+}
+
+.input_wrapper {
+  width: 100%;
+
+  & label {
+    font-weight: 600;
+  }
+}
+
+.edit_input_wrapper {
+  @extend .input_wrapper;
+
+  & label {
+    font-weight: 400;
+  }
+}
+
+.grouped_elements {
+  display: flex;
+  gap: $spacing-2xl;
+}
+
+.form_element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: $spacing-sm;
+}
+
+.label {
+  height: 20px;
+  font-size: $font-sm;
+}
+
+.edit_label {
+  @extend .label;
+  font-weight: 600;
+}
+
+.details_label {
+  @extend .label;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date_input {
+  margin-top: $spacing-sm !important;
+  background-color: $color-white !important;
+}
+
+.required_field {
+  color: $color-error400;
+}
+
+.edit_required_field {
+  color: $color-error600;
+}
+
+.spacing_bottom {
+  margin-bottom: $spacing-2xl;
+}
+
+.required_input {
+  &:hover {
+    border: 1px solid $color-error600;
+  }
+}
+
+.extra_details_edit_label {
+  @extend .edit_label;
+  margin-bottom: $spacing-mdl;
+}
+
+.extra_details_label {
+  @extend .label;
+  margin-bottom: $spacing-mdl;
+}
+
+.update_actions {
+  width: 100%;
+  display: flex;
+  gap: $spacing-4xl;
+  justify-content: center;
+
+  & button {
+    width: 200px;
+  }
+}

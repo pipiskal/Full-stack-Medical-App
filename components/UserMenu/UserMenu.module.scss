@@ -1,0 +1,30 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  box-shadow: $shadow-form;
+  right: 0px;
+  top: 50px;
+  background-color: $color-white;
+  border-radius: $radius-sm;
+}
+
+.wrapper ul li:hover {
+  button:first-child {
+    border-top-left-radius: $radius-sm;
+    border-top-right-radius: $radius-sm;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  //TODO Activate when other buttons are added
+
+  // button:last-child {
+  //   border-bottom-left-radius: $radius-sm;
+  //   border-bottom-right-radius: $radius-sm;
+  //   border-top-left-radius: 0;
+  //   border-top-right-radius: 0;
+  // }
+}

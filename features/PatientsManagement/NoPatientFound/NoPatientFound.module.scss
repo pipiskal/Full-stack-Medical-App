@@ -1,0 +1,66 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: $spacing-5xl;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.description {
+  margin-bottom: $spacing-2xl;
+  font-size: $font-sm;
+  color: $color-textLighter;
+  text-align: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.or {
+  margin-bottom: $spacing-2xl;
+  width: 100%;
+  font-size: $font-md;
+  color: $color-textLighter;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-md;
+  }
+
+  span {
+    border-radius: $radius-sm;
+    height: 0.5px;
+    width: 100%;
+    background-color: $color-gray600;
+  }
+
+  span:first-child {
+    margin-left: $spacing-xl;
+    margin-right: $spacing-lg;
+  }
+
+  span:last-child {
+    margin-right: $spacing-xl;
+    margin-left: $spacing-lg;
+  }
+}
+
+.register_patient {
+  color: $color-primary400;
+  cursor: pointer;
+}
+
+.register_patient:hover {
+  color: $color-primary600;
+}

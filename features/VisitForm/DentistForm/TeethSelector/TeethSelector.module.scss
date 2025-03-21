@@ -1,0 +1,44 @@
+@import '@/styles/theme';
+
+.tooth_chart {
+  display: flex;
+  width: 250px;
+}
+
+.teeth_wrapper {
+  -webkit-transition: fill 0.25s;
+  transition: fill 0.25s;
+  cursor: pointer;
+
+  polygon,
+  path {
+    -webkit-transition: fill 0.25s;
+    transition: fill 0.25s;
+    color: $color-white;
+  }
+
+  polygon:hover,
+  path:hover {
+    fill: $color-gray500;
+  }
+}
+
+.numbers_wrapper {
+  text {
+    font-size: $font-sm;
+    font-weight: 600;
+    color: $color-gray700;
+  }
+}
+
+.selected_tooth {
+  fill: $color-primary600;
+}
+
+.selected_tooth:hover {
+  fill: $color-primary600 !important;
+}
+
+.read_only {
+  fill: $color-gray500 !important;
+}

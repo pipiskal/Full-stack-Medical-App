@@ -1,0 +1,89 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-xl;
+  width: 100%;
+  max-width: 1440px;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-wrap: wrap-reverse;
+    gap: $spacing-2xl;
+  }
+}
+
+.left_section {
+  width: 70%;
+  margin-right: $spacing-xl;
+  min-width: 610px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.right_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacing-md;
+  height: fit-content;
+  width: 30%;
+  max-width: 350px;
+  margin-left: $spacing-xl;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.title {
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $color-gray400;
+  font-size: $font-lg;
+  font-weight: 600;
+  color: $color-textLight;
+}
+
+.title::after {
+  content: ' :';
+}
+
+.description {
+  color: $color-textLighter;
+  letter-spacing: 2px;
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: $spacing-4xl;
+
+  button {
+    min-width: 150px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.form_wrapper {
+  margin-top: $spacing-4xl;
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: $spacing-6xl;
+  transform: scale(2);
+}

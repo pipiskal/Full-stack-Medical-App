@@ -1,0 +1,171 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border: 1px solid $color-gray300;
+  border-radius: $radius-sm;
+  margin-top: $spacing-4xl;
+}
+
+.content_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.arrow {
+  transition: all 0.05s ease-in-out;
+  color: $color-textLight;
+}
+
+.arrow_down {
+  transition: all 0.05s ease-in-out;
+  transform: rotate(90deg) translateX(0px) translateY(2px);
+  color: $color-textLight;
+}
+
+.element_content_hidden {
+  display: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.element_content_visible {
+  display: flex;
+  padding: $spacing-lg;
+  transition: all 0.25s ease-in-out;
+  border-bottom: 1px solid $color-gray300;
+  background-color: $color-gray100;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-md;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-sm;
+  border-bottom: 1px solid $color-gray300;
+  color: $color-textLight;
+}
+
+.header:hover {
+  background-color: $color-primary100;
+}
+
+.top_header:hover {
+  border-top-left-radius: $radius-sm;
+  border-top-right-radius: $radius-sm;
+}
+
+.bottom_header:hover {
+  border-bottom-left-radius: $radius-sm;
+  border-bottom-right-radius: $radius-sm;
+}
+
+.header_active {
+  padding-right: $spacing-xl;
+}
+
+.header_active:hover {
+  background-color: $color-transparent;
+}
+
+.remove_border {
+  border-bottom: none;
+}
+
+.rounded_bottom_element {
+  border-bottom-left-radius: $radius-sm;
+  border-bottom-right-radius: $radius-sm;
+}
+
+.appointment_date {
+  margin-left: $spacing-lg;
+  color: $color-textLight;
+  font-size: $font-sm;
+}
+
+.no_history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: $color-textLighter;
+  padding-top: $spacing-4xl;
+}
+
+.message_wrapper {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  background-color: $color-gray100;
+  border-radius: $radius-sm;
+  padding: $spacing-lg;
+  font-size: $font-sm;
+  color: $color-textLight;
+  max-width: 400px;
+  text-align: center;
+
+  span {
+    margin-left: $spacing-sm;
+  }
+}
+
+.visit_form_wrapper {
+  position: relative;
+
+  &:hover {
+    .message_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+  }
+}
+
+.leave_edit_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $spacing-2xl;
+  margin-top: $spacing-sm;
+  padding: $spacing-lg;
+
+  svg {
+    color: $color-warning600;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.leave_edit_text {
+  color: $color-textLight;
+  max-width: 400px;
+  text-align: center;
+}

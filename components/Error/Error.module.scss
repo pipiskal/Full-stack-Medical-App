@@ -1,0 +1,34 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.title {
+  font-size: $font-2xl;
+  font-weight: 800;
+  color: $color-gray700;
+  margin-bottom: $spacing-xl;
+  letter-spacing: 1.5px;
+}
+
+.description {
+  font-size: $font-xl;
+  font-weight: 400;
+  color: $color-gray700;
+  margin-bottom: $spacing-5xl;
+}
+
+.icon {
+  font-size: 130px;
+  color: $color-gray700;
+  margin-bottom: $spacing-4xl;
+}

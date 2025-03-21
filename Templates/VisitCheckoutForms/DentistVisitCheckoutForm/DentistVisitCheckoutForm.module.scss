@@ -1,0 +1,70 @@
+@import '@/styles/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-5xl;
+  color: $color-textLight;
+  width: 100%;
+  min-width: fit-content;
+
+  section {
+    display: none;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    min-width: 100%;
+  }
+}
+
+.section {
+  margin-bottom: $spacing-xl;
+}
+
+.title {
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $color-gray400;
+  font-size: $font-lg;
+  font-weight: 600;
+}
+
+.title::after {
+  content: ' :';
+}
+
+.tooth_title {
+  margin: $spacing-md 0;
+  font-size: $font-md;
+  font-weight: 600;
+  padding-bottom: $spacing-sm;
+  border-bottom: 1px solid $color-gray400;
+  width: fit-content;
+  span {
+    margin-left: $spacing-md;
+  }
+}
+
+.tooth_title::before {
+  content: '• ';
+}
+
+.tooth_title::after {
+  content: ' :';
+}
+
+.description {
+  color: $color-textLighter;
+  letter-spacing: 2px;
+}
+
+.tooth_description {
+  color: $color-textLighter;
+  margin-top: $spacing-lg;
+  font-style: italic;
+  white-space: pre-wrap;
+}
+
+@page {
+  size: landscape;
+}
